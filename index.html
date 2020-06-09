@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <title>Forms playground</title>
+  </head>
+  <body>
+    <main>
+      <h1>Forms playground</h1>
+      <form method="GET" class="form" action="https://dev.cotenfrontend.pl">
+        <p>
+          <label for="firstName">Your name:</label>
+          <input
+            class="form__item"
+            id="firstName"
+            name="firstName"
+            placeholder="Provide your first name ggggggggggggg dddddddd"
+            type="text"
+          />
+        </p>
+        <p>
+          <label
+            >Your last name:
+            <input
+              class="form__item"
+              id="lastName"
+              value="Malczewski"
+              name="lastName"
+              placeholder="Provide your last name"
+              type="text"
+            />
+          </label>
+        </p>
+        <fieldset>
+          <legend>Address</legend>
+          <p>
+            <label for="firstName">Street name:</label>
+            <input
+              class="form__item"
+              id="streetName"
+              name="streetName"
+              placeholder="Provide your first street name"
+              type="text"
+            />
+          </p>
+          <p>
+            <label
+              >Second street name:
+              <input
+                class="form__item"
+                id="secondStreetName"
+                name="secondStreetName"
+                placeholder="Provide your second street name"
+                type="text"
+              />
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label
+            >Number:
+            <input
+              class="form__item"
+              id="number"
+              name="number"
+              placeholder="Provide only number"
+              type="number"
+            />
+          </label>
+        </p>
+        <p>
+          <label
+            >Telphone:
+            <input
+              class="form__item"
+              id="telephone"
+              name="telephone"
+              placeholder="Provide only phone number"
+              type="tel"
+            />
+          </label>
+        </p>
+        <p>
+          <label
+            >Email:
+            <input
+              class="form__item"
+              id="email"
+              name="email"
+              placeholder="Provide your e-mail"
+              type="email"
+            />
+          </label>
+        </p>
+        <p>
+          <label
+            >Range:
+            <input
+              class="form__item range--js"
+              id="range"
+              name="range"              
+              type="range"
+              min="0"
+              max="150"
+              step="20"
+            />
+          </label>
+        </p>
+        <p>
+          <label
+            >Password:
+            <input
+              class="form__item range--js"
+              id="password"
+              name="password"              
+              type="password"
+            />
+          </label>
+        </p>
+        <p>
+          <label
+            >Avatar:
+            <input
+              class="form__item range--js"
+              id="avatar"
+              name="avatar"              
+              type="file"
+            />
+          </label>
+          <p>
+            <label for="band">Pick one band:</label>
+            <select name="band" id="band">
+              <option value="band-1">Metalica</option>
+              <option value="band-2">U2</option>
+              <option value="band-3">Kazik</option>
+            </select>            
+          </p>
+          <p>
+            <label for="note">Your story: </label>
+            <textarea name="note" id="note" cols="30" rows="10">
+              My story is ...
+            </textarea>
+          </p>
+        </p>
+        <fieldset>
+          <legend>Favourite icecream flavour</legend>
+          <p>
+            <label><input type="radio" name="iceCream" value="Chocolate" /> Chocolate</label>
+          </p>
+          <p>
+            <label><input type="radio" name="iceCream" value="Lemon" /> Lemon</label>
+          </p>
+          <p>
+            <label><input type="radio" name="iceCream" value="Stawberry" /> Strawberry</label>
+          </p>
+        </fieldset>
+
+        <p>
+           <label><input type="checkbox" checked name="agreement" value="agree"> I agree</label>
+        </p>
+        <p>
+          <input type="submit" value="send">
+        </p>
+
+
+      </form>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
