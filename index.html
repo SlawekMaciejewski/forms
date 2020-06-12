@@ -10,7 +10,7 @@
   <body>
     <main>
       <h1>Forms playground</h1>
-      <form method="GET" class="form" action="https://dev.cotenfrontend.pl">
+      <form method="POST" class="form" action="https://dev.cotenfrontend.pl" enctype="application/x-www-form-urlencoded">
         <p>
           <label for="firstName">Your name:</label>
           <input
@@ -37,7 +37,7 @@
         <fieldset>
           <legend>Address</legend>
           <p>
-            <label for="firstName">Street name:</label>
+            <label>Street name:
             <input
               class="form__item"
               id="streetName"
@@ -45,6 +45,7 @@
               placeholder="Provide your first street name"
               type="text"
             />
+          </label>
           </p>
           <p>
             <label
@@ -88,6 +89,7 @@
           <label
             >Email:
             <input
+              required
               class="form__item"
               id="email"
               name="email"
@@ -161,6 +163,11 @@
 
         <p>
            <label><input type="checkbox" checked name="agreement" value="agree"> I agree</label>
+        </p>
+        <p>
+          <label> Postal Code:
+            <input name="postalCode" pattern="[0-9]{2}-[0-9]{3}">
+          </label>
         </p>
         <p>
           <input type="submit" value="send">
